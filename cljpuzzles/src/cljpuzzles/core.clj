@@ -3,7 +3,7 @@
 
 (defn day5-1
   []
-  (let [strings (s/split-lines (slurp "/Users/jtj/c/advent/cljpuzzles/day5.txt"))
+  (let [strings (s/split-lines (slurp "input/day5.txt"))
         nice? (fn [s]
                 (and
                  (>= (count (re-seq #"[aeiou]" s)) 3)
@@ -13,7 +13,7 @@
 
 (defn day5-2
   []
-  (let [strings (s/split-lines (slurp "/Users/jtj/c/advent/cljpuzzles/day5.txt"))
+  (let [strings (s/split-lines (slurp "input/day5.txt"))
         nice? (fn [s]
                 (and
                  (re-seq #"(..).*\1" s)
