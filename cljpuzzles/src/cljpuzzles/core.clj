@@ -19,6 +19,3 @@
                  (re-seq #"(..).*\1" s)
                  (re-seq #"(.).\1" s)))]
     (count (filter nice? strings))))
-
-
-(day5-2)
